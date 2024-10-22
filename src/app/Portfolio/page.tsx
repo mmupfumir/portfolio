@@ -12,7 +12,7 @@ export default function Portfolio() {
         Simple Portfolio Design
       </h1>
       <p className="text-black/80 text-xs md:text-sm py-5">
-      A Product Manager Portfolio template designed in Figma. Through this project, I embraced a minimalist yet purposeful design approach. My background in architecture has trained me to create spaces with intention and care, skills I’ve successfully applied to my design work in the tech world.
+      A Product Manager Portfolio template designed in Figma. Through this project, I embraced a minimalist yet purposeful design approach. My background in architectural design has trained me to create spaces with intention and care, skills I’ve successfully applied to my design work in the tech world.
       </p>
 
         <div className="rounded-md pt-5">
