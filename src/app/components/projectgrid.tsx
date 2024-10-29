@@ -6,7 +6,12 @@ import Link from "next/link";
 export default function ProjectGrid() {
   const projects = [
     {
-      name: "Web Development / Design",
+      name: "Web Design / Development",
+      page: "/Portfolio",
+      image: "/images/port.jpg",
+    },
+    {
+      name: "Web Design / Development",
       page: "/TWM",
       image: "/images/twm.png",
       link: "https://www.tradingwithmat.com/",
@@ -19,13 +24,6 @@ export default function ProjectGrid() {
     },
     {
       name: "Design",
-      page: "/Portfolio",
-      image: "/images/portfolio.jpg",
-    },
-  ];
-
-  const sideProjects = [
-    {
       page: "/Portfolio",
       image: "/images/portfolio.jpg",
     },

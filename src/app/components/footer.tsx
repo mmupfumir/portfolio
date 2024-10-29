@@ -1,5 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
 
-import { div } from 'framer-motion/client';
+
 import Link from 'next/link';
 export default function Footer() {
   return (
@@ -22,7 +23,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="md:text-sm flex flex-row gap-5 pt-5 border-t border-white/10">
+        <div className="md:text-sm flex flex-row gap-10 pt-5 border-t border-white/10">
           <Link href="/" className="hover:text-white/20 transition duration-500">
             Home
           </Link>
@@ -32,9 +33,6 @@ export default function Footer() {
           >
             About
           </Link>
-          <div>
-            |
-          </div>
           <Link
             href="https://www.linkedin.com/in/milton-mupfumira"
             target="_blank"
