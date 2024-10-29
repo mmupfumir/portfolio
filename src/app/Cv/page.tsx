@@ -6,6 +6,7 @@ export default function Cv() {
       title: "Collins Aerospace",
       subtitle: "Program Management Co-op",
       date: "Starting 2025",
+      link : "https://www.collinsaerospace.com/",
     },
     {
       title: "Trading With Mat",
@@ -104,7 +105,7 @@ export default function Cv() {
                   href={link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs font-medium text-black hover:text-white transition-hover duration-300"
+                  className="text-xs font-medium text-black hover:text-black/50 transition-hover duration-300"
                 >
                   {title}
                 </a>

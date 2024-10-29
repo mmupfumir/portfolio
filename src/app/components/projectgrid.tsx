@@ -8,7 +8,7 @@ export default function ProjectGrid() {
     {
       name: "Web Design / Development",
       page: "/Portfolio",
-      image: "/images/port.jpg",
+      image: "/images/port.png",
     },
     {
       name: "Web Design / Development",
@@ -34,7 +34,7 @@ export default function ProjectGrid() {
       <div className="flex justify-between items-center pb-5">
         <h1 className="text-black/50 text-sm tracking-tighter font-normal">Selected Works</h1>
         <div>
-          <Link href="/Workflow" className="bg-black tracking-tighter hover:bg-black/20 py-1 px-2 rounded-full text-white sm:text-xs transition duration-500">Design Workflow</Link>
+          <Link href="/Projects" className="bg-black tracking-tighter hover:bg-black/20 py-1 px-2 rounded-full text-white sm:text-xs transition duration-500">View All Work</Link>
         </div>
       </div>
       <ul className="grid grid-cols-1 gap-3 md:grid-cols-2">

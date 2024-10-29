@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 
-
 import Link from 'next/link';
 export default function Footer() {
   return (
@@ -23,7 +22,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="md:text-sm flex flex-row gap-10 pt-5 border-t border-white/10">
+        <div className="md:text-sm flex flex-row gap-10 pt-10 border-t border-white/10">
           <Link href="/" className="hover:text-white/20 transition duration-500">
             Home
           </Link>
