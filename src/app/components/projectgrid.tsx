@@ -2,34 +2,46 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable react/jsx-key */
-
+import Link from "next/link";
 export default function ProjectGrid() {
   const projects = [
     {
-      name: "Trading With Mat",
+      name: "Web Development / Design",
       page: "/TWM",
       image: "/images/twm.png",
       link: "https://www.tradingwithmat.com/",
     },
     {
-      name: "Car Fluent",
+      name: "Web Development",
       page: "/Carfluent",
       image: "/images/carfluent.png",
       link: "https://www.car-fluent.com/",
     },
     {
-      name: "Portfolio Design",
+      name: "Design",
+      page: "/Portfolio",
+      image: "/images/portfolio.jpg",
+    },
+  ];
+
+  const sideProjects = [
+    {
       page: "/Portfolio",
       image: "/images/portfolio.jpg",
     },
   ];
 
   return (
-    <main className="py-8">
-      <h1 className="text-black/30 text-xs tracking-tighter font-normal pb-5 text-center">SELECTED WORKS</h1>
-      <ul className="grid grid-cols-1 gap-3 md:grid-cols-3">
+    <main className="py-5 border-t border-black/5">
+      <div className="flex justify-between items-center pb-5">
+        <h1 className="text-black/50 text-sm tracking-tighter font-normal">Selected Works</h1>
+        <div>
+          <Link href="/Workflow" className="bg-black tracking-tighter hover:bg-black/20 py-1 px-2 rounded-full text-white sm:text-xs transition duration-500">Design Workflow</Link>
+        </div>
+      </div>
+      <ul className="grid grid-cols-1 gap-3 md:grid-cols-2">
         {projects.map(project => (
-          <a href={project.page} className="bg-[#f9f9f9] hover:ring-1 ring-black/15 rounded-lg p-20 text-center flex flex-col justify-center items-center">
+          <a href={project.page} className="bg-[#f9f9f9] hover:ring-1 ring-black/5 transition   duration-300 rounded-lg p-20 text-center flex flex-col justify-center items-center">
             {/* eslint-disable @next/next/no-img-element, jsx-a11y/alt-text, jsx-a11y/alt-text */}
             <img src={project.image} className="w-auto max-h-96 pb-5" />
             <span className="bg-black/10 py-1 px-3 rounded-full text-xs">

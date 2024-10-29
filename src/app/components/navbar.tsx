@@ -3,11 +3,13 @@ import Link from "next/link";
 export default function Navbar() {
   return (
 
-    <div className="bg-white/80 backdrop-blur-lg sticky top-0 px-5 text-black py-3 tracking-tight flex flex-row items-center sm:justify-between md:justify-center gap-5">
-      <Link href="/Gallery" className="text-black/40 hover:text-black/20 transition duration-500">GALLERY</Link>
-      <h1 className="text-sm text-center">
-        MM
-      </h1>
+    <div className="bg-white sticky top-0 px-5 py-5 tracking-tight flex flex-row items-center justify-between gap-10">
+      <h1 className="text-black text-xs transition duration-500">MILTON TM</h1>
+      <div className="flex flex-row gap-5 items-center">
+        <Link href="/Projects" className="text-black/60 hover:text-black/20 text-xs transition duration-500">Projects</Link>
+        <Link href="/Cv" className="text-black/60 hover:text-black/20 text-xs transition duration-500">About</Link>
+        <Link href="" className="bg-black hover:bg-blue-600 p-1 px-2 rounded-full text-white text-xs transition duration-500">Get in touch</Link>
+      </div>
     </div>
   );
 }

@@ -14,13 +14,13 @@ export default function TWM() {
       <h1 className="transition duration-300 flex flex-row items-center gap-1 font-medium">
         Trading with Mat
       </h1>
-      <h1 className="text-xs text-black/30 pb-5">Solo Full Stack Developer</h1>
-      <div className="bg-[#f9f9f9] pt-10 px-20 rounded-lg flex justify-center">
+      <h1 className="text-xs text-black/30 pb-5">Lead Software Developer</h1>
+      <div className="bg-[#f9f9f9] ring-1 ring-black/10 pt-10 px-20 rounded-lg flex justify-center">
         <Image
           src="/images/twm-cover.png"
           alt="Trading with Mat"
-          width={300}
-          height={300}
+          width={200}
+          height={200}
         />
       </div>
       <div className="text-black/80 text-xs md:text-sm py-5 flex flex-col gap-5">

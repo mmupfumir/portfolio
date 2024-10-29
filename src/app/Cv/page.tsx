@@ -1,23 +1,27 @@
-import Image from "next/image";
 import { Back } from "../components/back";
 
 export default function Cv() {
   const jobs = [
     {
+      title: "Collins Aerospace",
+      subtitle: "Program Management Co-op",
+      date: "Starting 2025",
+    },
+    {
       title: "Trading With Mat",
-      subtitle: "Contracted Full-Stack Engineer",
-      date: "Now",
+      subtitle: "Software Engineer (Contracted)",
+      date: "2024",
       link: "https://www.tradingwithmat.com/",
     },
     {
       title: "Car Fluent",
-      subtitle: "Backend Software Engineer Intern",
+      subtitle: "Software Engineering Intern",
       date: "2024",
       link: "https://www.car-fluent.com/",
     },
     {
       title: "University of Hartford, CETA",
-      subtitle: "IT Admin",
+      subtitle: "IT Technician",
       date: "2023",
       link: "https://www.hartford.edu/academics/schools-colleges/ceta/default.aspx",
     },
@@ -26,27 +30,17 @@ export default function Cv() {
   const extracurriculars = [
     {
       title: "National Society of Black Engineers",
-      subtitle: "Vice President | Executive Board Treasurer '23",
-      date: "Now",
+      subtitle: "Vice President",
+      date: "23/24",
     },
     {
       title: "University of Hartford, Reslife",
       subtitle: "Resident Assistant",
-      date: "Now",
+      date: "23/24",
     },
     {
       title: "National Organization of Minority Architecture Students",
       subtitle: "Treasurer",
-      date: "2023",
-    },
-    {
-      title: "Harvard University",
-      subtitle: "CS50X Computer Science Scholar",
-      date: "2023",
-    },
-    {
-      title: "Save our Streets",
-      subtitle: "Python Instructor",
       date: "2023",
     },
     {
@@ -104,7 +98,7 @@ export default function Cv() {
 
           <h1 className="text-sm text-black pt-8 pb-1">Work</h1>
           {jobs.map(({ title, subtitle, date, link }) => (
-            <div key={title} className="flex justify-between pt-2 pb-4 border-t border-black/10">
+            <div key={title} className="flex justify-between items-baseline pt-2 pb-4 border-t border-black/10">
               <div>
                 <a
                   href={link}
@@ -139,7 +133,7 @@ export default function Cv() {
           {photos.map(({ image, title, position, description }) => (
             <div key={title} className="pt-2 pb-4 ">
               <div>
-                <Image src={image} alt={title} className="w-auto rounded-lg" />
+                <img src={image} className="w-auto rounded-lg" />
                 <h1 className="text-sm tracking-tight text-black/80 pt-3">{title}</h1>
                 <h1 className="text-xs text-black/50 pb-5">{position}</h1>
               </div>

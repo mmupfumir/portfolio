@@ -15,8 +15,8 @@ export default function Clock() {
   }, []);
 
   return (
-    <div className="pb-5 text-sm text-black/30 font-mono">
-     {time}
+    <div className="pb-5 text-xs text-black">
+     EST: {time}
     </div>
   );
 };

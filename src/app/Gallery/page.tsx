@@ -2,7 +2,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable react/jsx-key */
-import Image from "next/image";
 
 export default function ProjectGrid() {
   const photos = [
@@ -71,7 +70,7 @@ export default function ProjectGrid() {
   <ul className="columns-1 md:columns-3 lg:columns-4 xl:columns-6 gap-5 space-y-5">
     {photos.map((photo, index) => (
       <li key={index} className="break-inside-avoid">
-        <Image src={photo.image} alt="image" className="rounded-lg w-full" />
+        <img src={photo.image} alt="image" className="rounded-lg w-full" />
       </li>
     ))}
   </ul>
