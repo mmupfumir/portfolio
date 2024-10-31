@@ -2,9 +2,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable react/jsx-key */
-import Link from "next/link";
-import { describe } from "node:test";
-import { FaArrowRight } from "react-icons/fa6";
 export default function ProjectGrid() {
   const projects = [
     {
