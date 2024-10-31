@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+
 import Image from "next/image";
 import Testimonials from "../components/testimonials";
 import { Back } from "../components/back";
