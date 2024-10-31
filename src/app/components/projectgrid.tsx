@@ -3,21 +3,29 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable react/jsx-key */
 import Link from "next/link";
+import { describe } from "node:test";
+import { FaArrowRight } from "react-icons/fa6";
 export default function ProjectGrid() {
   const projects = [
     {
-      name: "Web Design / Development",
+      name: "About",
+      description: "I craft moments, impressions that linger, and ideas that transcend. Branding is not decoration, but translation—a fluid exchange between vision and reality, thought and creation. Join me as I reimagine the digital landscape. ",
+      page: "/Cv",
+    },
+    {
+      name: "Design",
       page: "/Portfolio",
       image: "/images/port.png",
     },
     {
-      name: "Web Design / Development",
+      name: "Design / Development",
       page: "/TWM",
       image: "/images/twm.png",
       link: "https://www.tradingwithmat.com/",
     },
+
     {
-      name: "Web Development",
+      name: "Development",
       page: "/Carfluent",
       image: "/images/carfluent.png",
       link: "https://www.car-fluent.com/",
@@ -30,21 +38,18 @@ export default function ProjectGrid() {
   ];
 
   return (
-    <main className="py-5 border-t border-black/5">
+    <main>
       <div className="flex justify-between items-center pb-5">
-        <h1 className="text-black/50 text-sm tracking-tighter font-normal">Selected Works</h1>
-        <div>
-          <Link href="/Projects" className="bg-black tracking-tighter hover:bg-black/20 py-1 px-2 rounded-full text-white sm:text-xs transition duration-500">View All Work</Link>
-        </div>
       </div>
-      <ul className="grid grid-cols-1 gap-3 md:grid-cols-2">
+      <ul className="columns-1 md:columns-3 lg:columns-3 gap-5 space-y-5">
         {projects.map(project => (
-          <a href={project.page} className="bg-[#f9f9f9] hover:ring-1 ring-black/5 transition   duration-300 rounded-lg p-20 text-center flex flex-col justify-center items-center">
+          <a href={project.page} className="bg-[#f9f9f9] break-inside-avoid hover:ring-1 ring-black/10 transition duration-300 rounded-xl py-14 px-14 text-center flex flex-col justify-center items-center">
             {/* eslint-disable @next/next/no-img-element, jsx-a11y/alt-text, jsx-a11y/alt-text */}
-            <img src={project.image} className="w-auto max-h-96 pb-5" />
-            <span className="bg-black/10 py-1 px-3 rounded-full text-xs">
+            <span className="py-1 px-3 rounded-full text-xs text-black ring-1 ring-black/50">
               {project.name}
             </span>
+            <img src={project.image} className="w-auto max-h-96 pt-5" />
+            <p className="text-xs md:text-sm text-black/40">{project.description}</p>
           </a>
         ))}
       </ul>

@@ -3,8 +3,8 @@
 import Link from 'next/link';
 export default function Footer() {
   return (
-    <div className="pt-20">
-      <div className="bg-black px-5 text-xs text-white py-10 tracking-tighter">
+    <div className="pt-20 pb-5 px-5">
+      <div className="bg-black rounded-xl px-5 text-xs text-white py-5 tracking-tighter">
         <div className='flex sm:flex-col md:flex-row items-stretch md:gap-80'>
           <h1 className="md:text-lg text-white/50 pb-2">Contact</h1>
           <div>
@@ -22,7 +22,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="md:text-sm flex flex-row gap-10 pt-10 border-t border-white/10">
+        <div className="md:text-sm flex flex-row gap-10 pt-10 ">
           <Link href="/" className="hover:text-white/20 transition duration-500">
             Home
           </Link>

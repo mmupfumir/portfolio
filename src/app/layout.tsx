@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
-import Footer from "./components/footer";
 
 
 export const metadata: Metadata = {
@@ -18,7 +17,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={twMerge("font-sans bg-white text-black antialiased")}>
         {children}
-        <Footer />
       </body>
     </html>
   );

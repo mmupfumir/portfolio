@@ -30,11 +30,13 @@ export default function Projects() {
   ];
 
   return (
-    <main className="py-5 px-5 border-t border-black/5">
-      <Back />
+    <main className="px-5">
+      <div className="sticky top-0 py-5">
+        <Back />
+      </div>
       <div className="flex justify-between items-center pb-5">
       </div>
-      <ul className="grid grid-cols-1 gap-3 md:grid-cols-2">
+      <ul className="grid grid-cols-1 gap-3 md:grid-cols-3">
         {projects.map(project => (
           <a href={project.page} className="bg-[#f9f9f9] hover:ring-1 ring-black/5 transition   duration-300 rounded-lg p-20 text-center flex flex-col justify-center items-center">
             {/* eslint-disable @next/next/no-img-element, jsx-a11y/alt-text, jsx-a11y/alt-text */}
