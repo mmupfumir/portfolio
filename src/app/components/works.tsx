@@ -23,8 +23,8 @@ const worksData = [
 
 export default function Works() {
   return (
-    <section className="px-5">
-      <div className="flex overflow-hidden bg-[#f9f9f9] ring-1 ring-black/10 sm:py-5 md:py-5 rounded-3xl">
+    <section className="">
+      <div className="flex overflow-hidden bg-black/80 sm:py-5 md:py-5 ">
         <motion.div
           initial={{ x: "0" }}
           animate={{ x: "-50%" }}
@@ -35,7 +35,7 @@ export default function Works() {
             <div
               key={work.name}
             >
-              <div className="pb-2 font-normal text-black/80 sm:text-5xl tracking-tighter md:text-9xl hover:text-black">
+              <div className="pb-2 font-normal text-white sm:text-5xl tracking-tighter md:text-9xl hover:text-white/70">
                 {work.text}
               </div>
             </div>
