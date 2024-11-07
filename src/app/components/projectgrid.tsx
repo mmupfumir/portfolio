@@ -14,6 +14,10 @@ export default function ProjectGrid() {
       image: "/images/port.jpg",
     },
     {
+      name: "Design",
+      image: "/images/port.png",
+    },
+    {
       name: "Design / Development",
       page: "/TWM",
       image: "/images/twm.png",
@@ -38,7 +42,7 @@ export default function ProjectGrid() {
       </div>
       <ul className="columns-1 md:columns-2 lg:columns-3 gap-5 space-y-5">
         {projects.map(project => (
-          <a href={project.page} className="bg-[#f9f9f9] break-inside-avoid hover:ring-1 ring-black/20 transition duration-300 rounded-3xl py-14 px-14 text-center flex flex-col justify-center items-center">
+          <a href={project.page} className="bg-[#f9f9f9] break-inside-avoid hover:ring-1 ring-black/20 transition duration-300 rounded-xl py-14 px-14 text-center flex flex-col justify-center items-center">
             {/* eslint-disable @next/next/no-img-element, jsx-a11y/alt-text, jsx-a11y/alt-text */}
             <span className="py-1 px-3 rounded-full text-xs text-black ring-1 ring-black/50">
               {project.name}
