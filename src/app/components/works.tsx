@@ -12,10 +12,6 @@ const worksData = [
     name: "Designer",
   },
   {
-    text: "Photography",
-    name: "Photography",
-  },
-  {
     text: "Branding",
     name: "Branding",
   }
@@ -35,7 +31,7 @@ export default function Works() {
             <div
               key={work.name}
             >
-              <div className="pb-2 font-normal text-black/80 sm:text-5xl tracking-tighter md:text-9xl">
+              <div className="pb-2 font-normal text-black/80 sm:text-4xl tracking-tighter md:text-9xl">
                 {work.text}
               </div>
             </div>
