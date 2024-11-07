@@ -10,9 +10,8 @@ export default function ProjectGrid() {
       page: "/Cv",
     },
     {
-      name: "Design",
-      page: "/Portfolio",
-      image: "/images/port.png",
+      name: "My Full Stack",
+      image: "/images/port.jpg",
     },
     {
       name: "Design / Development",
