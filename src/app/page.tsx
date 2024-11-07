@@ -3,7 +3,6 @@
 import ProjectGrid from './components/projectgrid';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
-import Works from './components/works';
 
 
 export default function Home() {
