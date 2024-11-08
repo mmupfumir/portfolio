@@ -8,10 +8,6 @@ export default function PhotoGrid() {
       image: "/images/kay/run.jpg",
       name: "still young",
     },
-    {
-      image: "/images/building.jpg",
-      name: "be still",
-    }
   ];
 
   return (
@@ -24,7 +20,7 @@ export default function PhotoGrid() {
           <div className="pb-5 text-center">
             <a className="flex justify-center">
               <div className="relative">
-                <img src={project.image} className="w-full rounded-xl" />
+                <img src={project.image} className="w-full" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="tracking-tighter text-white sm:text-5xl md:text-9xl font-light">{project.name}</div>
                 </div>

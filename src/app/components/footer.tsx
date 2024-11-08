@@ -6,9 +6,9 @@ export default function Footer() {
     <div className="flex items-center h-screen">
       <div className="tracking-tighter">
         <div className='flex sm:flex-col md:flex-row items-stretch md:gap-80'>
-          <h1 className="md:text-5xl tracking-tighter text-black pb-2 max-w-2xl font-light">I'm available for selected collaborations. Let's connect.</h1>
+          <h1 className="sm:text-3xl md:text-5xl tracking-tighter text-black pb-2 max-w-2xl font-light">I'm available for selected collaborations. Let's connect.</h1>
         </div>
-        <div className="md:text-sm flex flex-row gap-10 pt-10 ">
+        <div className="sm: text-xs md:text-sm flex flex-row gap-10 pt-10 ">
           <Link
             href="https://www.linkedin.com/in/milton-mupfumira"
             target="_blank"
