@@ -2,12 +2,13 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-no-comment-textnodes */
 
-import { Description } from "@headlessui/react";
-import { a, div, span } from "framer-motion/client";
-
 /* eslint-disable react/jsx-key */
 export default function ProjectGrid() {
   const projects = [
+    {
+      page: "/Portfolio",
+      image: "/images/port.png",
+    },
     {
       name: "Trading With Mat",
       page: "/TWM",

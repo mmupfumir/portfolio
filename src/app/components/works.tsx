@@ -24,6 +24,9 @@ const worksData = [
 export default function Works() {
   return (
     <section className="pb-56">
+      <div>
+        <p>Cultivated </p>
+      </div>
       <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_20%,black_80%,transparent)] ring-1 ring-black/10 sm:py-5 md:py-5 ">
         <motion.div
           initial={{ x: "0" }}
