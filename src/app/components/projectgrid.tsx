@@ -9,7 +9,7 @@ export default function ProjectGrid() {
       name: "Carfluent",
       job: "Software Engineering Intern",
       page: "/Carfluent",
-      image: "/images/Carfluent.png",
+      image: "/images/carfluent.png",
       link: "https://www.car-fluent.com/",
     },
     {
