@@ -5,8 +5,8 @@
 export default function PhotoGrid() {
   const projects = [
     {
-      image: "/images/kay/run.jpg",
-      name: "still young",
+      image: "/images/kay/sun.jpg",
+      name: "Kalaya",
     },
   ];
 
@@ -20,7 +20,7 @@ export default function PhotoGrid() {
           <div className="pb-5 text-center">
             <a className="flex justify-center">
               <div className="relative">
-                <img src={project.image} className="w-full" />
+                <img src={project.image} className="rounded-md w-full" />
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="tracking-tighter text-white sm:text-5xl md:text-9xl font-light">{project.name}</div>
                 </div>
