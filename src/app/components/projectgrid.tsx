@@ -6,8 +6,11 @@
 export default function ProjectGrid() {
   const projects = [
     {
-      page: "/Portfolio",
-      image: "/images/port.png",
+      name: "Carfluent",
+      job: "Software Engineering Intern",
+      page: "/Carfluent",
+      image: "/images/Carfluent.png",
+      link: "https://www.car-fluent.com/",
     },
     {
       name: "Trading With Mat",
@@ -18,28 +21,21 @@ export default function ProjectGrid() {
       link: "https://www.tradingwithmat.com/",
     },
     {
-      name: "Carfluent",
-      job: "Software Engineering Intern",
-      page: "/Carfluent",
-      image: "/images/carfluent.png",
-      link: "https://www.car-fluent.com/",
-    },
-    {
       name: "Design",
       page: "/Portfolio",
-      image: "/images/portfolio.jpg",
+      image: "/images/portfolio.png",
     },
   ];
 
   return (
-    <main className="container">
+    <main className="">
       <div className="flex justify-between items-center pb-5">
       </div>
       <ul className="">
         {projects.map(project => (
 
           <div className="pb-5 text-center">
-            <a href={project.page} className="bg-[#f9f9f9] break-inside-avoid hover:ring-1 ring-black/10 transition duration-300 rounded-xl p-20 flex flex-col justify-center items-center">
+            <a href={project.page} className="bg-[#f9f9f9] break-inside-avoid hover:ring-1 ring-black/5 transition duration-300 rounded-xl p-20 flex flex-col justify-center items-center">
               <img src={project.image} className="w-auto max-h-96" />
             </a>
           </div>
