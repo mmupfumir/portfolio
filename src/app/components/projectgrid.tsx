@@ -1,30 +1,24 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-no-comment-textnodes */
+
+import { Description } from "@headlessui/react";
+import { a, div, span } from "framer-motion/client";
+
 /* eslint-disable react/jsx-key */
 export default function ProjectGrid() {
   const projects = [
     {
-      name: "About",
-      description: "I craft moments, impressions that linger, and ideas that transcend. Branding is not decoration, but translation—a fluid exchange between vision and reality, thought and creation. Join me as I reimagine the digital landscape. ",
-      page: "/Cv",
-    },
-    {
-      name: "My Full Stack",
-      image: "/images/port.jpg",
-    },
-    {
-      name: "Design",
-      image: "/images/port.png",
-    },
-    {
-      name: "Design / Development",
+      name: "Trading With Mat",
       page: "/TWM",
       image: "/images/twm.png",
+      description: "Software Engineer",
+      job: "Software Engineer",
       link: "https://www.tradingwithmat.com/",
     },
     {
-      name: "Development",
+      name: "Carfluent",
+      job: "Software Engineering Intern",
       page: "/Carfluent",
       image: "/images/carfluent.png",
       link: "https://www.car-fluent.com/",
@@ -37,19 +31,17 @@ export default function ProjectGrid() {
   ];
 
   return (
-    <main>
+    <main className="container">
       <div className="flex justify-between items-center pb-5">
       </div>
-      <ul className="columns-1 md:columns-2 lg:columns-3 gap-5 space-y-5">
+      <ul className="">
         {projects.map(project => (
-          <a href={project.page} className="bg-[#f9f9f9] break-inside-avoid hover:ring-1 ring-black/20 transition duration-300 rounded-3xl py-14 px-14 text-center flex flex-col justify-center items-center">
-            {/* eslint-disable @next/next/no-img-element, jsx-a11y/alt-text, jsx-a11y/alt-text */}
-            <span className="py-1 px-3 rounded-full text-xs text-black ring-1 ring-black/50">
-              {project.name}
-            </span>
-            <img src={project.image} className="w-auto max-h-96 pt-5" />
-            <p className="text-xs md:text-sm text-black/40">{project.description}</p>
-          </a>
+
+          <div className="pb-5 text-center">
+            <a href={project.page} className="bg-[#f9f9f9] break-inside-avoid hover:ring-1 ring-black/10 transition duration-300 rounded-xl p-20 flex flex-col justify-center items-center">
+              <img src={project.image} className="w-auto max-h-96" />
+            </a>
+          </div>
         ))}
       </ul>
     </main>

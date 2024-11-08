@@ -1,22 +1,22 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import ProjectGrid from './components/projectgrid';
-import Navbar from './components/navbar';
 import Footer from './components/footer';
-import Works from './components/works';
+import Navbar from './components/navbar';
 
 export default function Home() {
   return (
     <div>
     <Navbar />
-    <main className="pt-3">
-        <h1 className=' px-5 pt-40 sm:text-6xl md:text-[12.5rem] leading-none text-[#eaeaea] font-normal tracking-tighter'>photographer</h1>
-        <h1 className='px-5 pb-5 sm:text-6xl md:text-[12.5rem] leading-none text-[#eaeaea] font-normal tracking-tighter text-right'>and product developer</h1>
-        <Works />
-      <div className='px-5 tracking-tighter'>
-        <div className=''>
-          <ProjectGrid />
+    <main className="container">
+        <div className='flex flex-col text-center justify-center items-center sm:h-[80vh] md:h-[70vh]'>
+          <div>
+            <h1 className='text-[#161616] sm:text-7xl pb-5 md:text-9xl leading-none font-light tracking-tighter'>Software Engineer</h1>
+          </div>
+          <p className='tracking-tight pb-5 sm:py-5 md:pt-8 font-light text-black sm:text-md md:text-xl max-w-3xl'>I'm Milton, a 3rd year computer science student with 2+ years of experience in end - end software development. Currently a Program Management Co-op at <span className='text-black/40 border-b border-black/40'>RTX Collins Aerospace</span>, crafting impactful solutions to the unbuilt environment.</p>
         </div>
+      <div className='tracking-tight'>
+          <ProjectGrid />
       </div>
       <Footer />
     </main>
