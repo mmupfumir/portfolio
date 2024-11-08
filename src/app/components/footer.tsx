@@ -27,12 +27,6 @@ export default function Footer() {
             Home
           </Link>
           <Link
-            href="/Cv"
-            className="hover:text-black/20 transition duration-500"
-          >
-            About
-          </Link>
-          <Link
             href="https://www.linkedin.com/in/milton-mupfumira"
             target="_blank"
             rel="noopener noreferrer/"
