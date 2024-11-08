@@ -1,9 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/jsx-no-comment-textnodes */
-
-import { image } from "framer-motion/client";
-
 /* eslint-disable react/jsx-key */
 export default function PhotoGrid() {
   const projects = [
