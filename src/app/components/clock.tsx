@@ -17,7 +17,7 @@ export default function Clock() {
   return (
     <div className="text-center pb-5 font-light text-4xl text-black">
       <div className='text-xl text-black/30'>{time}</div>
-      <div className='rounded-full tracking-tight text-2xl font-light text-black/80'>
+      <div className='rounded-full tracking-tight sm:text-sm md:text-2xl font-light text-black/80'>
       {moment().tz('America/New_York').hour() < 12
         ? 'Good morning'
         : moment().tz('America/New_York').hour() < 17
