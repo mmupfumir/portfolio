@@ -21,7 +21,12 @@ export default function ProjectGrid() {
       link: "https://www.tradingwithmat.com/",
     },
     {
-      name: "Design",
+      name: "Notion Concept",
+      page: "/Portfolio",
+      image: "/images/watch.png",
+    },
+    {
+      name: "Portfolio Design",
       page: "/Portfolio",
       image: "/images/portfolio.png",
     },
@@ -31,12 +36,12 @@ export default function ProjectGrid() {
     <main className="">
       <div className="flex justify-between items-center pb-5">
       </div>
-      <h1 className="tracking-tighter text-center text-black/20 sm:text-xs md:text-sm py-5 font-light">Selected Works</h1>
+      <h1 className="tracking-tighter text-center text-black/20 sm:text-xs md:text-sm py-2 font-light">Selected Works</h1>
       <ul className="">
         {projects.map(project => (
 
           <div className="pb-5 text-center">
-            <a href={project.page} className="bg-[#f9f9f9] break-inside-avoid hover:ring-1 ring-black/5 transition duration-300 rounded-3xl p-20 flex flex-col justify-center items-center">
+            <a href={project.page} className="bg-[#f9f9f9] break-inside-avoid hover:ring-1 ring-black/5 transition duration-300 rounded-xl p-20 flex flex-col justify-center items-center">
             <div className="ring-1 ring-black/30 py-1.5 px-2 rounded-full tracking-tighter text-black sm:text-xs md:text-sm font-light">{project.name}</div>
               <img src={project.image} className=" pt-10 w-auto max-h-96" />
             </a>
